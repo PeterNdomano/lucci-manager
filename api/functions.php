@@ -27,4 +27,13 @@ function getAdminData($id){
   $row = mysqli_fetch_assoc($result);
   return $row;
 }
+
+function isPostFieldValid($key){
+  if(isset($_POST[$key])){
+    if(!empty(trim($_POST[$key]))){
+      return true;
+    }
+  }
+  return false;
+}
 ?>
