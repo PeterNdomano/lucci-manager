@@ -17,4 +17,14 @@ function classLoader($class){
     die("Class $class not found");
   }
 }
+
+function getAdminData($id){
+  global $conn;
+  $sql = $conn->prepare("SELECT * FROM admins WHERE id = ? OR username = ?");
+  $sql->bind_param('ss', $id, $id);
+  $sql->execute();
+  $result = $sql->get_result();
+  $row = mysqli_fetch_assoc($result);
+  return $row;
+}
 ?>
