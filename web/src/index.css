@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+*:focus {
+  outline: 0 !important;
+  outline-style: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+
+#root{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Loader styling */
+.Loader{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+
+/*  App Styling */
+
+.App{
+  width: 100%;
 }
