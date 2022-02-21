@@ -68,8 +68,8 @@ class App extends Component{
                 </div>
               </div>
               <div className="modal-footer">
-                <button onClick={() => this.adminLogin()} type="button" className="btn btn-sm" data-dismiss="modal" style={{ width:"100px", color: "var(--dark)" }}><b>Cancel</b></button>
-                <button type="button" className="btn btn-sm btn-dark" data-dismiss="modal" style={{ width:"100px" }}>Login</button>
+                <button type="button" className="btn btn-sm" data-dismiss="modal" style={{ width:"100px", color: "var(--dark)" }}><b>Cancel</b></button>
+                <button onClick={() => this.adminLogin()} type="button" className="btn btn-sm btn-dark" style={{ width:"100px" }}>Login</button>
               </div>
             </div>
           </div>

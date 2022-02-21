@@ -18,6 +18,8 @@ function classLoader($class){
   }
 }
 
+spl_autoload_register('classLoader');
+
 function getAdminData($id){
   global $conn;
   $sql = $conn->prepare("SELECT * FROM admins WHERE id = ? OR username = ?");
