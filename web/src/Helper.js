@@ -16,5 +16,17 @@ export function loader(show){
 }
 
 export function tellUser(msg, ind = 'w'){
-  toast.message(msg);
+  toast.message(msg, {
+    container: 'body',
+    position: "bottom|right",
+    margin: 15,
+    style:{
+       width: "300px",
+       fontSize:"15px",
+       position:"relative",
+       overflow: "hidden",
+     },
+    delay: 0,
+    duration: 4000,
+  });
 }
