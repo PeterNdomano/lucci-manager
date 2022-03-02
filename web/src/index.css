@@ -33,20 +33,33 @@ body, html{
   z-index: 1000;
 }
 
-/*Sidebar styling comes here*/
-.sideBar{
-  background: red;
-}
 
-.sideBar .item{
-  width: 70px;
-  height: 270px;
-  background: green;
-  margin: 10px;
-}
 
 /*  App Styling */
 
 .App{
+  width: 100%;
+}
+
+/*** MainBody styling *******/
+.MainBody{
+  width: 100%;
+  padding: 0px;
+}
+
+.MainBody .sectionTitle{
+  font-weight: 300;
+  font-size: 30px;
+}
+
+/********Body styling *******/
+.Body{
+  width: 100%;
+  padding-top: 20px;
+}
+
+
+/********Books Styling ******/
+.Books{
   width: 100%;
 }

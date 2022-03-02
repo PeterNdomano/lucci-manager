@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MainLoader from './components/MainLoader';
-import Footer from './components/Footer';
-import TopBar from './components/TopBar';
+import TopBar from './admin/TopBar';
+import Body from './admin/Body';
 import { MAIN_URL, APP_NAME, loader, tellUser } from './Helper';
 import $ from 'jquery';
 
@@ -9,40 +9,30 @@ class App extends Component{
 
   constructor(props){
     super(props);
+    this.state = {
+      navTo: 'books',
+    }
   }
 
   componentDidMount(){
     loader(false);
   }
 
-
-  getView = () => {
-    return (
-      <div className="MainBody">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-2 sideBar">
-              <div className="d-flex flex-wrap">
-                <div className="item"></div>
-                <div className="item"></div>
-                <div className="item"></div>
-                <div className="item"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+  navCallback = (navTo) => {
+    this.setState({
+      navTo
+    });
   }
 
+
   render(){
-    let view = this.getView();
     return (
       <div className="App">
-        <TopBar/>
+        <TopBar navCallback={this.navCallback}/>
         <MainLoader/>
-        {view}
-        <Footer/>
+        <div className="MainBody" id="mainBody">
+          <Body navCallback={this.navCallback} navTo={this.state.navTo}/>
+        </div>
       </div>
     );
   }

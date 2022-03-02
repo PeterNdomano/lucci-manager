@@ -8,14 +8,14 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'popper.js';
 import './index.css';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes, HashRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter basename="/">
     <Routes>
       <Route exact path="/" element={<App/>}></Route>
       <Route exact path="/admin" element={<Admin/>}></Route>
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
