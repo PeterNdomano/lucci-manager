@@ -12,17 +12,17 @@ class TopBar extends Component{
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">Home</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Books</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Features</a>
+              <a className="nav-link" href="#">Students</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <a className="nav-link" href="#">Staff</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Disabled</a>
+              <a className="nav-link" href="#">Settings</a>
             </li>
             <li className="nav-item">
               <a className="nav-link btn btn-outline-danger" style={{ color:"var(--danger)"}} href="#">Log Out</a>
