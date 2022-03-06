@@ -25,12 +25,12 @@ class Student extends Component{
         }
         else{
           tellUser('Student login required');
-          window.location.href = '/';
+          window.location.href = '/komu/';
         }
       }
       else{
         tellUser('Nework error');
-        window.location.href = '/';
+        window.location.href = '/komu/';
       }
     })
   }

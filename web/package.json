@@ -19,7 +19,7 @@
     "siiimple-toast": "^3.1.7",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "werenium.com/komu",
+  "homepage": "/komu",
   "proxy": "http://localhost:80",
   "scripts": {
     "start": "react-scripts start",
