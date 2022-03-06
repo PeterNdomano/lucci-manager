@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import MainLoader from './components/MainLoader';
-import TopBar from './admin/TopBar';
-import Body from './admin/Body';
+import TopBar from './student/TopBar';
+import Body from './student/Body';
 import { MAIN_URL, APP_NAME, loader, tellUser } from './Helper';
 import $ from 'jquery';
 
-class Admin extends Component{
+class Student extends Component{
 
   constructor(props){
     super(props);
@@ -16,14 +16,15 @@ class Admin extends Component{
 
   auth = () => {
     loader(true);
-    $.post(MAIN_URL+'auth_admin.php', {}, (data, status) => {
+    $.post(MAIN_URL+'auth_student.php', {}, (data, status) => {
+      //console.log(data);
       if(status === 'success'){
         let response = JSON.parse(data);
         if(response.status === 1){
           loader(false);
         }
         else{
-          tellUser('Staff login required');
+          tellUser('Student login required');
           window.location.href = '/';
         }
       }
@@ -58,4 +59,4 @@ class Admin extends Component{
     );
   }
 }
-export default Admin;
+export default Student;

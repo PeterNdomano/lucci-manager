@@ -94,3 +94,64 @@ body, html{
   height: 24px;
   color: var(--info);
 }
+
+/* ------ Style BookReader here -----------*/
+.BookReader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  overflow: scroll;
+  background: white;
+}
+
+.BookReader .mToolbar{
+  position: fixed;
+  height: 65px;
+  background: gray;
+  top: 0;
+  left:0;
+  right: 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.BookReader .mToolbarBtm{
+  position: fixed;
+  height: 50px;
+  background: gray;
+  bottom: 0;
+  left:0;
+  overflow: hidden;
+  right: 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.BookReader .docReader{
+  position: fixed;
+  top:70px;
+  left:0;
+  right: 0;
+  bottom: 54px;
+  width: 100%;
+  overflow: scroll;
+  padding: 0;
+  border: none;
+  transition: all 2s ease-in;
+}
+
+
+.BookReader img{
+  width: 30px;
+}
+
+@media print {
+  .BookReader{
+    display: none;
+  }
+
+  .BookReader .docReader{
+    display: none;
+  }
+}
+
+/* ------ Style CourseWatcher here -----------*/

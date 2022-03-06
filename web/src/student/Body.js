@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { APP_NAME } from '../Helper';
 import Books from './Books';
-import Students from './Students';
+import Settings from './Settings';
+
 
 class Body extends Component{
 
@@ -19,13 +20,13 @@ class Body extends Component{
     )
   }
 
-  renderStudents(){
+  renderSettings(){
     return (
     <div className="Body">
       <div className="container">
        <div className="card">
         <div className="card-body">
-          <Students/>
+          <Settings/>
         </div>
        </div>
       </div>
@@ -37,8 +38,8 @@ class Body extends Component{
     if(this.props.navTo === 'books'){
        return this.renderBooks();
     }
-    else if(this.props.navTo === 'students'){
-       return this.renderStudents();
+    else if(this.props.navTo === 'settings'){
+       return this.renderSettings();
     }
   }
 }

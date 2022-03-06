@@ -13,18 +13,13 @@ class TopBar extends Component{
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a style={{ cursor:"pointer"}} className="nav-link" onClick={() => { this.props.navCallback('books')}}>Books</a>
+              <a style={{ cursor:"pointer"}} className="nav-link" onClick={() => { this.props.navCallback('books')}}>My Books</a>
             </li>
             <li className="nav-item">
-              <a style={{ cursor:"pointer"}} className="nav-link" onClick={() => { this.props.navCallback('students')}}>Students</a>
+              <a style={{ cursor:"pointer"}} className="nav-link" onClick={() => { this.props.navCallback('settings')}}>Settings</a>
             </li>
 
-            {/*
-              <li className="nav-item">
-                <a style={{ cursor:"pointer"}} className="nav-link" onClick={() => { this.props.navCallback('lendings')}}>Lendings</a>
-              </li>
 
-              */}
             <li className="nav-item">
               <a onClick={() => { logOut()}} style={{ cursor:"pointer"}} className="nav-link btn btn-outline-danger" style={{ color:"var(--danger)"}} >Log Out</a>
             </li>
