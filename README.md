@@ -1,2 +1,2 @@
 # lucci-manager
-University books library manager
+Library manager for both soft & hard copied books
