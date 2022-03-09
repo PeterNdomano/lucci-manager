@@ -16,7 +16,11 @@ export function loader(show){
 }
 
 export function logOut(){
-  
+  $.post(MAIN_URL+'logout.php', {}, (data, status) => {
+    if(status === 'success'){
+      window.location.href = '/komu/';
+    }
+  });
 }
 
 export function tellUser(msg, ind = 'w'){
