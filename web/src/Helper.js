@@ -4,7 +4,7 @@ import toast from 'siiimple-toast';
 
 export const APP_NAME = "Library Manager";
 
-export const MAIN_URL = "http://werenium.com/komu/api/";
+export const MAIN_URL = "github_projects/lucci-manager/api/";
 
 export function loader(show){
   if(show){
@@ -16,11 +16,7 @@ export function loader(show){
 }
 
 export function logOut(){
-  $.post(MAIN_URL+'logout.php', {}, (data, status) => {
-    if(status === 'success'){
-      window.location.href = '/komu/';
-    }
-  });
+  
 }
 
 export function tellUser(msg, ind = 'w'){
