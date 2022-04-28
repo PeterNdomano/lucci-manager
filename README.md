@@ -1,5 +1,5 @@
 # lucci-manager
-Simple & extendable Library manager for both soft & hard copied books. Built with React, PHP and CRA
+Simple & extendable Library manager for both soft & hard copied books. Built with React, PHP and CRA. Sample Project for those who wish to learn core PHP for Back-End development and React for Front-End Development
 
 ## Landing Page
 ![Screenshot 2022-04-29 at 00-01-30 KOMU COLLEGE](https://user-images.githubusercontent.com/28900892/165846608-cfa030fa-8d93-4dc4-bfe2-87ca44be7563.png)
